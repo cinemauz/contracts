@@ -1,5 +1,5 @@
 {
-  "name": "@cinema/contracts",
+  "name": "@cinemauz/contracts",
   "version": "1.0.0",
   "description": "protobuf definition and generated typescript types",
   "scripts": {
