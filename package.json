@@ -2,8 +2,11 @@
   "name": "@cinemauz/contracts",
   "version": "1.0.2",
   "description": "protobuf definition and generated typescript types",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "generate": "protoc -I ./proto ./proto/*.proto --ts_proto_out=./gen --ts_proto_opt=nestJs=true,package=omit"
+    "build": "tsc -p tsconfig.build.json",
+    "generate": "protoc -I proto ./proto/*.proto --ts_proto_out=./gen --ts_proto_opt=nestJs=true,package=omit"
   },
   "files": [
     "proto",
@@ -16,5 +19,9 @@
     "@nestjs/microservices": "^11.1.15",
     "rxjs": "^7.8.2",
     "ts-proto": "^2.11.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.9.3"
   }
 }
