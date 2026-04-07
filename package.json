@@ -1,6 +1,6 @@
 {
   "name": "@cinemauz/contracts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "protobuf definition and generated typescript types",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
